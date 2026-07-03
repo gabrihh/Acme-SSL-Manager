@@ -21,10 +21,11 @@ npm install acme-client ws dotenv
 **1. Create a .env file**
 
 ```env
-DOMAIN=your-domain.duckdns.org
-EMAIL=your-email@gmail.com
-DUCKDNS_TOKEN=your-token
-PORT=10480
+DOMAIN=your-domain.provider.tld
+EMAIL=your-email@provider.tld
+PORT=3000
+
+// other credentials from your provider
 ```
 
 **2. Create a DNS provider**
@@ -50,7 +51,7 @@ const SSLManager = require('./ssl-manager');
 const ssl = new SSLManager({
     domain: process.env.DOMAIN,
     email: process.env.EMAIL,
-    port: process.env.PORT || 10480,
+    port: process.env.PORT || 3000,
     dnsProvider: dnsProvider,
 });
 
