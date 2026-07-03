@@ -62,18 +62,18 @@ ssl.startServer((server) => {
 
 ## Examples
 
-· examples/duckdns.js - DuckDNS integration
-· examples/custom-provider.js - Custom provider template
+• examples/duckdns.js - DuckDNS integration<br>
+• examples/custom-provider.js - Custom provider template
 
 ## Security
 
-· All credentials are stored in .env
-· Certificates are stored in ./certs/
-· Account keys are securely stored
+• All credentials are stored in .env<br>
+• Certificates are stored in ./certs/<br>
+• Account keys are securely stored
 
 ## Requirements
 
-· Node.js 16+
-· DNS provider with API access
+• Node.js 16+<br>
+• DNS provider with API access
 
 *Built with acme-client and Let's Encrypt.*
