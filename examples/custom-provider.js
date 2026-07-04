@@ -16,7 +16,7 @@ const dnsProvider = {
 const ssl = new SSLManager({
     domain: process.env.DOMAIN,
     email: process.env.EMAIL,
-    port: process.env.PORT || 443,
+    port: process.env.PORT || 3000,
     dnsProvider: dnsProvider,
 });
 
